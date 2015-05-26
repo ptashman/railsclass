@@ -1,0 +1,92 @@
+@pricingPadding: 15px;
+
+.pricing {
+  padding: 25px 5px;
+}
+
+.pricing-wrapper {
+  border: 1px solid @grayLighter;
+  text-align: center;
+  //.box-shadow(0 3px 6px rgba(0,0,0,.3));
+  .box-shadow(0 1px 2px rgba(0,0,0,.4), 0 3px 8px rgba(0,0,0,.2));
+  background-color: #eee;
+  .border-radius(8px);
+}
+
+.pricing-body {
+  padding: 0 @pricingPadding @pricingPadding;
+}
+
+.pricing-price {
+  border: none;
+  font-weight: bold;
+  padding-bottom: 5px;
+  font-size: 40px;
+  line-height: 45px;
+  text-shadow: 0 2px 3px rgba(0,0,0,.4);
+  span {
+    color: #bbb;
+    font-size: 18px;
+    text-shadow: none;
+  }
+}
+
+.pricing ul {
+  list-style: none;
+  margin: 0;
+  font-size: 16px;
+  padding: @pricingPadding;
+  background-color: white;
+  border: 1px solid #ddd;
+  .border-radius(6px);
+  .box-shadow(inset 0 2px 4px rgba(0,0,0,.5));
+}
+
+.pricing li {
+  //border-top: 1px dashed @gray;
+  padding: 5px;
+}
+
+.pricing-header {
+  padding: 5px;
+  .border-radius(8px 8px 0 0);
+  #gradient > .vertical(#fbfbfb, #eee);
+  h1 {
+    color: darken(@green, 5%);
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 0;
+    text-shadow: 0 1px 0 white, 1px 1px 1px white, -1px 1px 1px white;
+  }
+}
+
+.pricing-footer {
+  padding-top: @pricingPadding;
+}
+
+.pricing-recommended {
+  padding: 0;
+  .pricing-wrapper {
+    .box-shadow(0 3px 6px rgba(0,0,0,.4), 0 5px 10px rgba(0,0,0,.2));
+  }
+  .pricing-header {
+    h1 {
+      color: lighten(@linkColor, 10%);
+    }
+  }
+  .pricing-price {
+    font-size: 50px;
+  }
+}
+
+.pricing-orange h1 {
+  color: @orange;
+}
+
+.pricing-red h1 {
+  color: lighten(@red, 10%);
+}
+
+.pricing-purple h1 {
+  color: @purple;
+}

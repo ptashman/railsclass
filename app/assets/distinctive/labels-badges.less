@@ -1,0 +1,160 @@
+//
+// Labels and badges
+// --------------------------------------------------
+
+
+// Base classes
+.label,
+.badge {
+  // font-size: @baseFontSize * .846;
+  // font-weight: bold;
+  // line-height: 14px; // ensure proper line-height if floated
+  // color: @white;
+  // vertical-align: baseline;
+  // white-space: nowrap;
+  text-shadow: 0 1px 1px rgba(0,0,0,.25);
+  .box-shadow(inset 0 1px 2px rgba(0,0,0,.3));
+  // background-color: @grayLight;
+}
+// Set unique padding and border-radii
+.label {
+  padding: 3px 8px 3px;
+  // .border-radius(3px);
+}
+.badge {
+  padding: 1px 5px 1px 6px;
+  .border-radius(12px);
+}
+
+// Hover state, but only for links
+a {
+  &.label:hover,
+  &.badge:hover {
+    color: @white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.label-raised,
+.badge-raised {
+  .box-shadow(0 2px 3px rgba(0,0,0,.6));
+}
+
+.label-bordered {
+  border: 3px solid white;
+}
+.badge-bordered {
+  border: 3px solid white;
+  .border-radius(18px);
+}
+
+.label-raised.label-bordered,
+.badge-raised.badge-bordered {
+  .box-shadow(inset 0 1px 2px rgba(0,0,0,.3), 0 2px 3px rgba(0,0,0,.6));
+}
+
+// Colors
+// Only give background-color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute)
+.label,
+.badge {
+  // Primary (dark blue)
+  &-primary           { background-color: @btnPrimaryBackground; }
+  &-primary[href]     { background-color: darken(@btnPrimaryBackground, 10%); }
+  // Special (purple)
+  &-special           { background-color: @purple; }
+  &-special[href]     { background-color: darken(@purple, 10%); }
+  // Passive (white)
+  &-passive           { background-color: @white; color: @textColor; }
+  &-passive[href]     { background-color: darken(@white, 10%); color: @textColor; }
+  // Important (red)
+  &-important         { background-color: @errorText; }
+  &-important[href]   { background-color: darken(@errorText, 10%); }
+  // Warnings (orange)
+  &-warning           { background-color: @orange; }
+  &-warning[href]     { background-color: darken(@orange, 10%); }
+  // Success (green)
+  &-success           { background-color: @successText; }
+  &-success[href]     { background-color: darken(@successText, 10%); }
+  // Info (turquoise)
+  &-info              { background-color: @infoText; }
+  &-info[href]        { background-color: darken(@infoText, 10%); }
+  // Inverse (black)
+  // &-inverse           { background-color: @grayDark; }
+  // &-inverse[href]     { background-color: darken(@grayDark, 10%); }
+}
+
+.btn-primary {
+  .label,
+  .badge {
+    &-passive { color: @btnPrimaryBackground; }
+  }
+}
+.btn-info {
+  .label,
+  .badge {
+    &-passive { color: @btnInfoBackground; }
+  }
+}
+.btn-special {
+  .label,
+  .badge {
+    &-passive { color: @btnSpecialBackground; }
+  }
+}
+.btn-success {
+  .label,
+  .badge {
+    &-passive { color: @btnSuccessBackground; }
+  }
+}
+.btn-warning {
+  .label,
+  .badge {
+    &-passive { color: @btnWarningBackground; }
+  }
+}
+.btn-danger {
+  .label,
+  .badge {
+    &-passive { color: @btnDangerBackground; }
+  }
+}
+.btn-inverse {
+  .label,
+  .badge {
+    &-passive { color: @btnInverseBackground; }
+  }
+}
+
+.btn-primary,
+.btn-info,
+.btn-special,
+.btn-success,
+.btn-warning,
+.btn-danger,
+.btn-inverse {
+  .badge.badge-dark-text,
+  .label.label-dark-text {
+    color: @textColor;
+  }
+}
+
+.badge-container {
+  position: relative;
+
+  .badge-top-right {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+}
+
+// Quick fix for labels/badges in buttons
+// .btn {
+//   .label,
+//   .badge {
+//     position: static;
+//     top: 0;
+//   }
+// }

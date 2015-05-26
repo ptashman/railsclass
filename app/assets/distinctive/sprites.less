@@ -1,0 +1,189 @@
+//
+// Sprites
+// --------------------------------------------------
+
+
+// ICONS
+// -----
+
+// Because we are including font-awesome, we need to account for users which
+// have a version of bootstrap which have these css rules by reseting them back
+// to normal.
+
+[class^="icon-"],
+[class*=" icon-"] {
+  // display: inline-block;
+  width: auto;
+  height: auto;
+  .ie7-restore-right-whitespace();
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  // background-repeat: no-repeat;
+  margin-top: 0;
+}
+
+/* White icons with optional class, or on hover/active states of certain elements */
+.icon-white,
+.nav-tabs > .active > a > [class^="icon-"],
+.nav-tabs > .active > a > [class*=" icon-"],
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"] {
+  background-image: none;
+}
+
+.icon-glass              { background-position: 0% 0%; }
+.icon-music              { background-position: 0% 0%; }
+.icon-search             { background-position: 0% 0%; }
+.icon-envelope           { background-position: 0% 0%; }
+.icon-heart              { background-position: 0% 0%; }
+.icon-star               { background-position: 0% 0%; }
+.icon-star-empty         { background-position: 0% 0%; }
+.icon-user               { background-position: 0% 0%; }
+.icon-film               { background-position: 0% 0%; }
+.icon-th-large           { background-position: 0% 0%; }
+.icon-th                 { background-position: 0% 0%; }
+.icon-th-list            { background-position: 0% 0%; }
+.icon-ok                 { background-position: 0% 0%; }
+.icon-remove             { background-position: 0% 0%; }
+.icon-zoom-in            { background-position: 0% 0%; }
+.icon-zoom-out           { background-position: 0% 0%; }
+.icon-off                { background-position: 0% 0%; }
+.icon-signal             { background-position: 0% 0%; }
+.icon-cog                { background-position: 0% 0%; }
+.icon-trash              { background-position: 0% 0%; }
+
+.icon-home               { background-position: 0% 0%; }
+.icon-file               { background-position: 0% 0%; }
+.icon-time               { background-position: 0% 0%; }
+.icon-road               { background-position: 0% 0%; }
+.icon-download-alt       { background-position: 0% 0%; }
+.icon-download           { background-position: 0% 0%; }
+.icon-upload             { background-position: 0% 0%; }
+.icon-inbox              { background-position: 0% 0%; }
+.icon-play-circle        { background-position: 0% 0%; }
+.icon-repeat             { background-position: 0% 0%; }
+.icon-refresh            { background-position: 0% 0%; }
+.icon-list-alt           { background-position: 0% 0%; }
+.icon-lock               { background-position: 0% 0%; }
+.icon-flag               { background-position: 0% 0%; }
+.icon-headphones         { background-position: 0% 0%; }
+.icon-volume-off         { background-position: 0% 0%; }
+.icon-volume-down        { background-position: 0% 0%; }
+.icon-volume-up          { background-position: 0% 0%; }
+.icon-qrcode             { background-position: 0% 0%; }
+.icon-barcode            { background-position: 0% 0%; }
+
+.icon-tag                { background-position: 0% 0%; }
+.icon-tags               { background-position: 0% 0%; }
+.icon-book               { background-position: 0% 0%; }
+.icon-bookmark           { background-position: 0% 0%; }
+.icon-print              { background-position: 0% 0%; }
+.icon-camera             { background-position: 0% 0%; }
+.icon-font               { background-position: 0% 0%; }
+.icon-bold               { background-position: 0% 0%; }
+.icon-italic             { background-position: 0% 0%; }
+.icon-text-height        { background-position: 0% 0%; }
+.icon-text-width         { background-position: 0% 0%; }
+.icon-align-left         { background-position: 0% 0%; }
+.icon-align-center       { background-position: 0% 0%; }
+.icon-align-right        { background-position: 0% 0%; }
+.icon-align-justify      { background-position: 0% 0%; }
+.icon-list               { background-position: 0% 0%; }
+.icon-indent-left        { background-position: 0% 0%; }
+.icon-indent-right       { background-position: 0% 0%; }
+.icon-facetime-video     { background-position: 0% 0%; }
+.icon-picture            { background-position: 0% 0%; }
+
+.icon-pencil             { background-position: 0% 0%; }
+.icon-map-marker         { background-position: 0% 0%; }
+.icon-adjust             { background-position: 0% 0%; }
+.icon-tint               { background-position: 0% 0%; }
+.icon-edit               { background-position: 0% 0%; }
+.icon-share              { background-position: 0% 0%; }
+.icon-check              { background-position: 0% 0%; }
+.icon-move               { background-position: 0% 0%; }
+.icon-step-backward      { background-position: 0% 0%; }
+.icon-fast-backward      { background-position: 0% 0%; }
+.icon-backward           { background-position: 0% 0%; }
+.icon-play               { background-position: 0% 0%; }
+.icon-pause              { background-position: 0% 0%; }
+.icon-stop               { background-position: 0% 0%; }
+.icon-forward            { background-position: 0% 0%; }
+.icon-fast-forward       { background-position: 0% 0%; }
+.icon-step-forward       { background-position: 0% 0%; }
+.icon-eject              { background-position: 0% 0%; }
+.icon-chevron-left       { background-position: 0% 0%; }
+.icon-chevron-right      { background-position: 0% 0%; }
+
+.icon-plus-sign          { background-position: 0% 0%; }
+.icon-minus-sign         { background-position: 0% 0%; }
+.icon-remove-sign        { background-position: 0% 0%; }
+.icon-ok-sign            { background-position: 0% 0%; }
+.icon-question-sign      { background-position: 0% 0%; }
+.icon-info-sign          { background-position: 0% 0%; }
+.icon-screenshot         { background-position: 0% 0%; }
+.icon-remove-circle      { background-position: 0% 0%; }
+.icon-ok-circle          { background-position: 0% 0%; }
+.icon-ban-circle         { background-position: 0% 0%; }
+.icon-arrow-left         { background-position: 0% 0%; }
+.icon-arrow-right        { background-position: 0% 0%; }
+.icon-arrow-up           { background-position: 0% 0%; }
+.icon-arrow-down         { background-position: 0% 0%; }
+.icon-share-alt          { background-position: 0% 0%; }
+.icon-resize-full        { background-position: 0% 0%; }
+.icon-resize-small       { background-position: 0% 0%; }
+.icon-plus               { background-position: 0% 0%; }
+.icon-minus              { background-position: 0% 0%; }
+.icon-asterisk           { background-position: 0% 0%; }
+
+.icon-exclamation-sign   { background-position: 0% 0%; }
+.icon-gift               { background-position: 0% 0%; }
+.icon-leaf               { background-position: 0% 0%; }
+.icon-fire               { background-position: 0% 0%; }
+.icon-eye-open           { background-position: 0% 0%; }
+.icon-eye-close          { background-position: 0% 0%; }
+.icon-warning-sign       { background-position: 0% 0%; }
+.icon-plane              { background-position: 0% 0%; }
+.icon-calendar           { background-position: 0% 0%; }
+.icon-random             { background-position: 0% 0%; }
+.icon-comment            { background-position: 0% 0%; }
+.icon-magnet             { background-position: 0% 0%; }
+.icon-chevron-up         { background-position: 0% 0%; }
+.icon-chevron-down       { background-position: 0% 0%; }
+.icon-retweet            { background-position: 0% 0%; }
+.icon-shopping-cart      { background-position: 0% 0%; }
+.icon-folder-close       { background-position: 0% 0%; }
+.icon-folder-open        { background-position: 0% 0%; }
+.icon-resize-vertical    { background-position: 0% 0%; }
+.icon-resize-horizontal  { background-position: 0% 0%; }
+
+.icon-hdd                     { background-position: 0% 0%; }
+.icon-bullhorn                { background-position: 0% 0%; }
+.icon-bell                    { background-position: 0% 0%; }
+.icon-certificate             { background-position: 0% 0%; }
+.icon-thumbs-up               { background-position: 0% 0%; }
+.icon-thumbs-down             { background-position: 0% 0%; }
+.icon-hand-right              { background-position: 0% 0%; }
+.icon-hand-left               { background-position: 0% 0%; }
+.icon-hand-up                 { background-position: 0% 0%; }
+.icon-hand-down               { background-position: 0% 0%; }
+.icon-circle-arrow-right      { background-position: 0% 0%; }
+.icon-circle-arrow-left       { background-position: 0% 0%; }
+.icon-circle-arrow-up         { background-position: 0% 0%; }
+.icon-circle-arrow-down       { background-position: 0% 0%; }
+.icon-globe                   { background-position: 0% 0%; }
+.icon-wrench                  { background-position: 0% 0%; }
+.icon-tasks                   { background-position: 0% 0%; }
+.icon-filter                  { background-position: 0% 0%; }
+.icon-briefcase               { background-position: 0% 0%; }
+.icon-fullscreen              { background-position: 0% 0%; }

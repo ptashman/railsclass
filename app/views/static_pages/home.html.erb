@@ -1,14 +1,168 @@
-<div class="center hero-unit">
-  <h1>Welcome to the Sample App</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Distinctive</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
-  <%= link_to "Sign up now!", signup_path,
-                              class: "btn btn-large btn-primary" %>
-</div>
+	<link rel="stylesheet" href="vendor/assets/stylesheets/distinctive/bootstrap.css">
+	<link rel="stylesheet" href="<%= Rails.root.join('app', 'assets', 'stylesheets', 'responsive.css') %>">
+	<link rel="stylesheet" href="<%= Rails.root.join('app', 'assets', 'stylesheets', 'distinctive.css') %>">
+	<link rel="stylesheet" href="<%= Rails.root.join('app', 'assets', 'stylesheets', 'main.css') %>">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="index.html">Distinctive</a>
+			<div class="nav-collapse">
+				<ul class="nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="styles.html">Style Gallery</a></li>
+				</ul>
+				<ul class="nav pull-right">
+						<li><a href="signup.html">Sign Up</a></li>
+						<li><a href="login.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="navbar-spacer"></div>
 
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+	<div id="featureCarousel" class="carousel slide">
+		<!-- Carousel items -->
+		<div class="carousel-inner">
+			<div class="item active">
+			<%= image_tag("1.jpg") %>
+				<div class="carousel-caption clearfix">
+					<p>Your website doesn't have to look like every other website built with Bootstrap</p>
+					<h1 class="pull-left">Differentiate</h1>
+					<p><a class="btn btn-primary btn-large pull-right" href="blog.html">Make it Distinctive!</a></p>
+				</div>
+			</div>
+			<div class="item">
+				<%= image_tag("2.jpg") %>
+				<div class="carousel-caption clearfix">
+					<p>Start out on the right foot with an excellent theme for Twitter Bootstrap.</p>
+					<h1 class="pull-left">A Solid Foundation</h1>
+					<p><a class="btn btn-primary btn-large pull-right" href="styles.html">Explore the Changes</a></p>
+				</div>
+			</div>
+			<div class="item">
+				<%= image_tag("3.jpg") %>
+				<div class="carousel-caption clearfix">
+					<p>Using Distinctive it is easy to build a user interface that people will love to use.</p>
+					<h1 class="pull-left">Nice and Clean</h1>
+					<p><a class="btn btn-primary btn-large pull-right" href="signup.html">See An Example</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- Carousel nav -->
+		<a class="carousel-control left" href="#featureCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
+		<a class="carousel-control right" href="#featureCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+	</div>
+
+
+	<div class="container">	
+		<section id="why">
+			<div class="row">
+				<div class="span4">
+					<h3><i class="icon-resize-full"></i> Responsive to the Core</h3>
+					Go ahead, resize your browser.  The Distinctive theme it will look great at any resolution.
+				</div>
+				<div class="span4">
+					<h3><i class="icon-search"></i> Small Details</h3>
+					The small details are really what make the Distinctive theme shine.  From the subtle background texture to the enhanced depth and definition this theme has it where it counts.<br/>
+					<a class="btn" href="styles.html">Review the Changes</a>
+				</div>
+				<div class="span4">
+					<h3><i class="icon-font"></i> Font Awesome Icons!</h3>
+					Distinctive includes the incredible <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">
+					Font Awesome</a> icons which can scale infinitely and be styled with css.  To see what we mean check out this demo:<br/><a class="btn" href="styles.html#icons">Icon Demo</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span4">
+					<h3>$ Pricing Page</h3>
+					A well designed pricing page can make a huge difference for your site, and the Distinctive theme comes with a great one.  
+				</div>
+				<div class="span4">
+					<h3><i class="icon-ok"></i> Intuitive Forms</h3>
+					The Distinctive theme builds upon Bootstrap's already excellent forms by adding several refinements which make it even easier to create forms your users will love.
+					For some examples check out the sample <a href="signup.html">Signup</a> and <a href="login.html">Login</a> forms.
+				</div>
+				<div class="span4">
+					<h3><i class="icon-github"></i> All Files Included</h3>
+					Just like Twitter Bootstrap, the Distinctive theme is built with less.  All these less files are included, so you can go back and create custom builds or tweak things as need be.
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span3">
+					<h4>Example Pages</h4>
+					<ul>
+						<li><a href="signup.html">Signup Form</a></li>
+						<li><a href="login.html">Login Form</a></li>
+						<li><a href="pricing.html">Pricing Page</a></li>
+						<li><a href="blog.html">Blog</a></li>
+					</ul>
+				</div>
+				<div class="span3">
+					<h4>Contact Us</h4>
+					<address>
+						<strong>Awesome Company</strong><br>
+						123 Success Ave<br>
+						Some City, CA 98888<br>
+						<abbr title="Phone">P:</abbr> (123) 456-7890<br/>
+						<a href="mailto:support@AwesomeCompany.com">support@AwesomeCompany.com</a>
+					</address>
+				</div>				
+				<div class="span4">
+					<h4>About</h4>
+					<p>We are an awesome company that does incredible things.  We make our widgets better than anyone else and we take pride in that.</p>
+				</div>
+				<div class="span2 social">
+					<h4>Social</h4>
+					<div class="row-fluid">
+						<div class="pull-left"><a class="btn btn-small"><i class="icon-large icon-facebook"></i></a></div>
+						<div class="pull-left"><a class="btn btn-small"><i class="icon-large icon-twitter"></i></a></div>
+						<div class="pull-left"><a class="btn btn-small"><i class="icon-large icon-linkedin"></i></a></div>
+						<div class="pull-left"><a class="btn btn-small"><i class="icon-large icon-google-plus"></i></a></div>
+						<div class="pull-left"><a class="btn btn-small"><i class="icon-large icon-pinterest"></i></a></div>
+						<div class="pull-left"><a class="btn btn-small"><i class="icon-large icon-github"></i></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+	<script src="<%= Rails.root.join('app', 'assets', 'javascripts', 'bootstrap.js') %>"></script>
+	<script src="<%= Rails.root.join('app', 'assets', 'javascripts', 'bootstrap-fileupload.js') %>"></script>
+	<script src="<%= Rails.root.join('app', 'assets', 'javascripts', 'jquery.fittext.js') %>"></script>
+	<script src="<%= Rails.root.join('app', 'assets', 'javascripts', 'main.js') %>"></script>
+</body>
+</html>
+
